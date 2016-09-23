@@ -1,0 +1,16 @@
+<%-- any content can be specified here e.g.: --%>
+<%
+            String serverAddress         = "http://connect.csccloud.in/account/";
+            String authorizationAddress  = serverAddress + "authorize";
+            String tokenAddress          = serverAddress + "token";
+            String resourceAddress       = serverAddress + "resource";
+            String clientId              = "c2ff6084-f407-4a01-af5e-695475db8602";
+            String clientSecret          = "ee0f2b2fd3b57e1ddc0e71c24eafdd57";// "testpass";
+            //String redirectUri           = "http://10.1.5.99:8080/javamerchant/login_success.jsp";
+            String redirectUri           = "http://javamerchant.csccloud.in/login_success.jsp";
+            String accessToken           = "32zDIHeOPeVunekZ";
+
+            String bridgePayAddress      = "http://pay.csccloud.in/pay/m2b/";
+            String bridgePrivateKey      = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANGJele/cJFDBjUV3AB5hWsZRL2np6XByr4ndepUJiVba8WSLAmBqNjxJKASaeIDFOZj/Pzzu+ydZc0jtaMduQZrDbHeBU20l+AbGBKd3oXY0wfNoWUnKHCnEROmnWUfzFtmc/k+1jkLCWtimItaQGaF1j2VWqqA4yrysal2Z51HAgMBAAECgYAsvfhbyEsXGYK3zyUdDNXKWqjs/mGz6T+Lfw2Urcc/btgCZgX1ObR+Lm+tpoDpe9L4px0cPkdAbRORzDA61lvted640y2xQ3lP/PJkC0oWy4bH+UifA4PeJQYktdXEsyLiu4PljdA1gAFNuiB88AnR62DtRM0QSUAUGRFoFskscQJBAPQNgjtJJ7iDBSsM+zsBM66FW8JVRDhtYThjJ0InuDe2SCUghLw2OvBlvZoKfAxod20bT611Xbjtvh+bKXZdlC0CQQDby2otR+cuDIXw6hu1lebApchvPhLhbvcfR7Qx7JLgaRgBEUk7pnsnplFpUJLvUzu5g9qXw4v2Fp8cYYTc2xvDAkEA3/ZdouZZazvhTEaXbuiFcwyyzj3NYzMNWt+zMUSeC5Jd1qRm6wmhQOc8/dXNTN25awj7L6VbItAZ/4s2m4b46QJBAKJHHn6OHvaV0nKcNpcsNPG5tTHE7+W3qwdSRo2xsIO1tD5dh+ddtIICvwr1rXa7ylXfLw5sFzM7YoBu08zIjUcCQEPUzIOJPLatdeB+DLPw9TZTpP13ZP3PM3mjKk8UIKvil7LnZHpx6Fdfm8M6JDv2+Q4yfVlaBgIjeMMQ8OInb5A=";
+            String bridgePublicKey       = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRiXpXv3CRQwY1FdwAeYVrGUS9p6elwcq+J3XqVCYlW2vFkiwJgajY8SSgEmniAxTmY/z887vsnWXNI7WjHbkGaw2x3gVNtJfgGxgSnd6F2NMHzaFlJyhwpxETpp1lH8xbZnP5PtY5CwlrYpiLWkBmhdY9lVqqgOMq8rGpdmedRwIDAQAB";
+%>

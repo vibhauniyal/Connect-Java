@@ -1,0 +1,75 @@
+<%-- 
+    Document   : index
+    Created on : 15 Jul, 2016, 6:11:12 PM
+    Author     : sandeep
+--%>
+<%@ page session="true" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" session="true"  import="javax.servlet.http.HttpSession" %>
+<%@ include file="connect_server.jspf" %>
+<%
+    String username = null;
+try{
+    username = (String)session.getAttribute("username");
+}
+catch(Exception ex){}
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JAVA Merchant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Bootstrap template for Sample Merchant Application" />
+<meta name="author" content="Abhishek Ranjan" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+	
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+<!-- Session data
+Enumeration keys = session.getAttributeNames();
+while (keys.hasMoreElements())
+{
+  String key = (String)keys.nextElement();
+  out.println(key + ": " + session.getValue(key) + "<br>\n");
+}
+-->
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="48" height="48" />&nbsp;Merchant&nbsp; <span class="highlight">JAVA</span>   </a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="shop.jsp">Shop</a></li>
+                        <% if(username != null && username.length() > 0) { %>
+                        <li><a href="logout.jsp">Logout (<%= username %>)</a></li>
+                        <% } else { %>
+                        <li><a href="login.jsp">Login</a></li>
+                        <% } %>
+			<!--li><a href="pay.jsp">Pay</a></li-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
